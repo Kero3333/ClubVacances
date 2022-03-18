@@ -1,7 +1,5 @@
 # Vacances chez Gustave.
 
-# Le site est trouvable [ici](https://erwanbrev.github.io/ClubVacances/)
-
 ## Site de location d’appartement ou maison à la mer et à la montagne créee par :
 
 ### Front-end
