@@ -521,10 +521,10 @@ function hmrAcceptRun(bundle, id) {
 },{}],"aTSSr":[function(require,module,exports) {
 const axios = require("axios");
 const verifyUser = require("./modules/verifyUser");
-const authorised = async ()=>{
+const authorized = async ()=>{
     await verifyUser();
 };
-authorised();
+authorized();
 const name1 = document.querySelector(".nomDuLieu");
 const localisation = document.querySelector(".secteur");
 const Description = document.querySelector(".description");
@@ -542,7 +542,7 @@ img.src = localStorage.getItem("picture");
 name1.textContent = location.name;
 localisation.textContent = location.localisation;
 Description.textContent = location.description;
-surface.textContent = location.area;
+surface.textContent = `${location.area} m²`;
 price.textContent = `${location[season + "_season"]} €`;
 bedroom.textContent = location.bedroom;
 bathroom.textContent = location.bathroom;
@@ -2149,13 +2149,12 @@ module.exports = async ()=>{
     try {
         await axios.get("http://localhost:1337/api/users/me", {
             headers: {
-                Authorization: req.headers.authorization,
+                Authorization: `Bearer ${token}`,
                 "Content-Type": "application/json"
             }
         });
-        next();
     } catch (err) {
-        res.status(401).send(err.message);
+        console.log("ici2");
         document.location.href = "http://localhost:1234/";
     }
 };

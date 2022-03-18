@@ -1,11 +1,11 @@
 const axios = require("axios");
 const verifyUser = require("./modules/verifyUser");
 
-const authorised = async () => {
+const authorized = async () => {
   await verifyUser();
 };
 
-authorised();
+authorized();
 
 const name1 = document.querySelector(".nomDuLieu");
 const localisation = document.querySelector(".secteur");
@@ -29,7 +29,7 @@ img.src = localStorage.getItem("picture");
 name1.textContent = location.name;
 localisation.textContent = location.localisation;
 Description.textContent = location.description;
-surface.textContent = location.area;
+surface.textContent = `${location.area} m²`;
 price.textContent = `${location[season + "_season"]} €`;
 bedroom.textContent = location.bedroom;
 bathroom.textContent = location.bathroom;

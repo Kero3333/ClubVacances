@@ -1,10 +1,10 @@
 const verifyUser = require("./modules/verifyUser");
 
-const authorised = async () => {
+const authorized = async () => {
   await verifyUser();
 };
 
-authorised();
+authorized();
 
 const mountain = document.querySelector("#montagne");
 

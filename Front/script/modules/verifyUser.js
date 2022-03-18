@@ -10,13 +10,13 @@ module.exports = async () => {
   try {
     await axios.get("http://localhost:1337/api/users/me", {
       headers: {
-        Authorization: req.headers.authorization,
+        Authorization: `Bearer ${token}`,
         "Content-Type": "application/json",
       },
     });
-    next();
   } catch (err) {
-    res.status(401).send(err.message);
+    console.log("ici2");
+
     document.location.href = "http://localhost:1234/";
   }
 };

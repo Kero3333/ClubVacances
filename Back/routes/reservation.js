@@ -3,6 +3,7 @@ const axios = require("axios");
 const nodemailer = require("nodemailer");
 require("dotenv").config();
 
+const valideDate = require("../utilities/valideDate");
 const verifyToken = require("../middlewares/verifyToken");
 
 router.use(verifyToken);
@@ -10,27 +11,8 @@ router.use(verifyToken);
 router.post("", async (req, res) => {
   let { start_date, end_date, cook, location, visit, message } = req.body;
 
-  const difference = (date1, date2) => {
-    const date1utc = Date.UTC(
-      date1.getFullYear(),
-      date1.getMonth(),
-      date1.getDate()
-    );
-    const date2utc = Date.UTC(
-      date2.getFullYear(),
-      date2.getMonth(),
-      date2.getDate()
-    );
-    day = 1000 * 60 * 60 * 24;
-    return (date2utc - date1utc) / day;
-  };
-
-  const date1 = new Date(start_date);
-  const date2 = new Date(end_date);
-  const time_difference = difference(date1, date2);
-
-  if (time_difference < 7 || time_difference > 31) {
-    return res.status(400).send("erreur durée du séjour");
+  if (valideDate(start_date, end_date) === 1) {
+    return res.status(400).send("dates de séjour incorrect");
   }
 
   const {

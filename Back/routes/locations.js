@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const axios = require("axios");
 
+const valideDate = require("../utilities/valideDate");
 const verifyToken = require("../middlewares/verifyToken");
 
 router.use(verifyToken);
@@ -54,12 +55,11 @@ router.get("", async (req, res) => {
 });
 
 router.get("/search", async (req, res) => {
-  console.log(req.query);
-  let url = "http://localhost:1337/api/locations?&populate=picture";
+  let url = "http://localhost:1337/api/locations?populate=picture";
 
   const { localisation } = req.query;
   if (localisation) {
-    url += `filters[localisation][$eq]=${localisation}`;
+    url += `&filters[localisation][$eq]=${localisation}`;
   }
 
   const { bedroom } = req.query;
@@ -121,7 +121,6 @@ router.get("/search", async (req, res) => {
       listeVac[listeVac.length - 1].fields.start_date.split("T")[0]
     );
     intervalle.push(listeVac[0].fields.end_date.split("T")[0]);
-    console.log(seasons);
     return intervalle;
   };
 
@@ -135,6 +134,10 @@ router.get("/search", async (req, res) => {
     date = date.split(",");
 
     const start_date = date[0];
+    const end_date = date[1];
+    if (valideDate(start_date, end_date) === 1) {
+      return res.status(400).send("dates de séjour incorrect");
+    }
 
     const month = date[0].split("-")[1];
 
