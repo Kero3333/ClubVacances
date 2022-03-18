@@ -520,6 +520,10 @@ function hmrAcceptRun(bundle, id) {
 
 },{}],"89Rpy":[function(require,module,exports) {
 const axios = require("axios");
+const verifyUser = require("./modules/verifyUser");
+const authorised = async ()=>{
+    await verifyUser();
+};
 const filteredByCategory = async ()=>{
     if (localStorage.getItem("category")) {
         let url = `http://localhost:3001/locations/search?category=${localStorage.getItem("category")}`;
@@ -561,6 +565,7 @@ const filteredByCategory = async ()=>{
         }
     }
 };
+authorised();
 filteredByCategory();
 const form = document.querySelector("form");
 form.addEventListener("submit", async (e)=>{
@@ -623,7 +628,7 @@ form.addEventListener("submit", async (e)=>{
     }
 });
 
-},{"axios":"jo6P5"}],"jo6P5":[function(require,module,exports) {
+},{"axios":"jo6P5","./modules/verifyUser":"fhUw1"}],"jo6P5":[function(require,module,exports) {
 module.exports = require('./lib/axios');
 
 },{"./lib/axios":"63MyY"}],"63MyY":[function(require,module,exports) {
@@ -2187,6 +2192,26 @@ var utils = require('./../utils');
     return utils.isObject(payload) && payload.isAxiosError === true;
 };
 
-},{"./../utils":"5By4s"}]},["8HaP0","89Rpy"], "89Rpy", "parcelRequire2710")
+},{"./../utils":"5By4s"}],"fhUw1":[function(require,module,exports) {
+const axios = require("axios");
+// on vérifie l'identité de l'utilisateur
+module.exports = async ()=>{
+    let token = localStorage.getItem("token");
+    if (!token) return document.location.href = "http://localhost:1234/";
+    try {
+        await axios.get("http://localhost:1337/api/users/me", {
+            headers: {
+                Authorization: req.headers.authorization,
+                "Content-Type": "application/json"
+            }
+        });
+        next();
+    } catch (err) {
+        res.status(401).send(err.message);
+        document.location.href = "http://localhost:1234/";
+    }
+};
+
+},{"axios":"jo6P5"}]},["8HaP0","89Rpy"], "89Rpy", "parcelRequire2710")
 
 //# sourceMappingURL=recherches.86e45030.js.map

@@ -1,4 +1,11 @@
 const axios = require("axios");
+const verifyUser = require("./modules/verifyUser");
+
+const authorised = async () => {
+  await verifyUser();
+};
+
+authorised();
 
 const form = document.querySelector("form");
 

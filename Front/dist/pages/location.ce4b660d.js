@@ -520,6 +520,11 @@ function hmrAcceptRun(bundle, id) {
 
 },{}],"aTSSr":[function(require,module,exports) {
 const axios = require("axios");
+const verifyUser = require("./modules/verifyUser");
+const authorised = async ()=>{
+    await verifyUser();
+};
+authorised();
 const name1 = document.querySelector(".nomDuLieu");
 const localisation = document.querySelector(".secteur");
 const Description = document.querySelector(".description");
@@ -547,27 +552,31 @@ type.textContent = location.type;
 const form = document.querySelector("form");
 form.addEventListener("submit", async (e)=>{
     e.preventDefault();
-    const cook = e.target.chef.value;
-    const visit = e.target.visite.value;
+    const cook = document.querySelector("#chef").checked;
+    const visit = document.querySelector("#visite").checked;
     const start_date = e.target.startDate.value;
     const end_date = e.target.endDate.value;
     const message = e.target.texteReserve.value;
-    console.log(document.querySelector("#chef").checked);
-//   try {
-//     await axios.post("http://127.0.0.1:3001/reservation", {
-//       start_date,
-//       end_date,
-//       cook,
-//       visit,
-//       message,
-//       id,
-//     });
-//   } catch (err) {
-//     console.log(err.message);
-//   }
+    try {
+        await axios.post("http://127.0.0.1:3001/reservation", {
+            start_date,
+            end_date,
+            cook,
+            visit,
+            message,
+            location: id
+        }, {
+            headers: {
+                Authorization: `Bearer ${localStorage.getItem("token")}`,
+                "Content-Type": "application/json"
+            }
+        });
+    } catch (err) {
+        console.log(err.message);
+    }
 });
 
-},{"axios":"jo6P5"}],"jo6P5":[function(require,module,exports) {
+},{"axios":"jo6P5","./modules/verifyUser":"fhUw1"}],"jo6P5":[function(require,module,exports) {
 module.exports = require('./lib/axios');
 
 },{"./lib/axios":"63MyY"}],"63MyY":[function(require,module,exports) {
@@ -2131,6 +2140,26 @@ var utils = require('./../utils');
     return utils.isObject(payload) && payload.isAxiosError === true;
 };
 
-},{"./../utils":"5By4s"}]},["e0o6c","aTSSr"], "aTSSr", "parcelRequire2710")
+},{"./../utils":"5By4s"}],"fhUw1":[function(require,module,exports) {
+const axios = require("axios");
+// on vérifie l'identité de l'utilisateur
+module.exports = async ()=>{
+    let token = localStorage.getItem("token");
+    if (!token) return document.location.href = "http://localhost:1234/";
+    try {
+        await axios.get("http://localhost:1337/api/users/me", {
+            headers: {
+                Authorization: req.headers.authorization,
+                "Content-Type": "application/json"
+            }
+        });
+        next();
+    } catch (err) {
+        res.status(401).send(err.message);
+        document.location.href = "http://localhost:1234/";
+    }
+};
+
+},{"axios":"jo6P5"}]},["e0o6c","aTSSr"], "aTSSr", "parcelRequire2710")
 
 //# sourceMappingURL=location.ce4b660d.js.map

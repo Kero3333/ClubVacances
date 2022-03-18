@@ -49,14 +49,14 @@
           <span class="secteurCategorie">Environnement</span><span class="categorie">Campagne</span>
           <span class="secteurType">Type de maison</span><span class="type">Manoir</span>
           <span class="titreMessage">Message :</span>
-          <textarea name="texteReserve" id="textReserve"></textarea>
+          <textarea name="texteReserve" id="textReserve" required=""></textarea>
           <span class="titrePrix">Prix</span><span class="prix">5000€</span>
           <span class="chef"><input type="checkbox" name="chef" id="chef" value="true">Chef</span>
           <span class="visite"><input type="checkbox" name="visite" id="visite" value="true">Visite</span>
           <span class="depart">Départ</span>
           <span class="arrive">Arrivée</span>
-          <input type="date" name="startDate" class="css-input departInput">
-          <input type="date" name="endDate" class="css-input arriveInput">
+          <input type="date" name="startDate" class="css-input departInput" required="">
+          <input type="date" name="endDate" class="css-input arriveInput" required="">
           <button type="submit" class="valider">Réserver</button>
         </div>
       </form>

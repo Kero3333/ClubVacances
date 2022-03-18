@@ -1,3 +1,11 @@
+const verifyUser = require("./modules/verifyUser");
+
+const authorised = async () => {
+  await verifyUser();
+};
+
+authorised();
+
 const mountain = document.querySelector("#montagne");
 
 mountain.addEventListener("click", () => {

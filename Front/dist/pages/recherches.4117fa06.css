@@ -91,4 +91,13 @@
   margin-left: 55px;
 }
 
+.locations {
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  margin: 2%;
+}
+
 /*# sourceMappingURL=recherches.4117fa06.css.map */

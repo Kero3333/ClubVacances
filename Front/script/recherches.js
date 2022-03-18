@@ -1,4 +1,9 @@
 const axios = require("axios");
+const verifyUser = require("./modules/verifyUser");
+
+const authorised = async () => {
+  await verifyUser();
+};
 
 const filteredByCategory = async () => {
   if (localStorage.getItem("category")) {
@@ -44,6 +49,8 @@ const filteredByCategory = async () => {
     }
   }
 };
+
+authorised();
 filteredByCategory();
 
 const form = document.querySelector("form");

@@ -1,4 +1,11 @@
 const axios = require("axios");
+const verifyUser = require("./modules/verifyUser");
+
+const authorised = async () => {
+  await verifyUser();
+};
+
+authorised();
 
 const name1 = document.querySelector(".nomDuLieu");
 const localisation = document.querySelector(".secteur");
@@ -35,24 +42,31 @@ const form = document.querySelector("form");
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
-  const cook = e.target.chef.value;
-  const visit = e.target.visite.value;
+  const cook = document.querySelector("#chef").checked;
+  const visit = document.querySelector("#visite").checked;
   const start_date = e.target.startDate.value;
   const end_date = e.target.endDate.value;
   const message = e.target.texteReserve.value;
 
-  console.log(document.querySelector("#chef").checked);
-
-  //   try {
-  //     await axios.post("http://127.0.0.1:3001/reservation", {
-  //       start_date,
-  //       end_date,
-  //       cook,
-  //       visit,
-  //       message,
-  //       id,
-  //     });
-  //   } catch (err) {
-  //     console.log(err.message);
-  //   }
+  try {
+    await axios.post(
+      "http://127.0.0.1:3001/reservation",
+      {
+        start_date,
+        end_date,
+        cook,
+        visit,
+        message,
+        location: id,
+      },
+      {
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+          "Content-Type": "application/json",
+        },
+      }
+    );
+  } catch (err) {
+    console.log(err.message);
+  }
 });

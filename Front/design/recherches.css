@@ -90,3 +90,12 @@
 .chambreText {
   margin-left: 55px;
 }
+
+.locations {
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  margin: 2%;
+}

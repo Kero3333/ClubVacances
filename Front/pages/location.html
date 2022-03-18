@@ -64,7 +64,7 @@
           <span class="secteurType">Type de maison</span
           ><span class="type">Manoir</span>
           <span class="titreMessage">Message :</span>
-          <textarea name="texteReserve" id="textReserve"></textarea>
+          <textarea name="texteReserve" id="textReserve" required></textarea>
           <span class="titrePrix">Prix</span><span class="prix">5000€</span>
           <span class="chef"
             ><input
@@ -84,8 +84,18 @@
           >
           <span class="depart">Départ</span>
           <span class="arrive">Arrivée</span>
-          <input type="date" name="startDate" class="css-input departInput" />
-          <input type="date" name="endDate" class="css-input arriveInput" />
+          <input
+            type="date"
+            name="startDate"
+            class="css-input departInput"
+            required
+          />
+          <input
+            type="date"
+            name="endDate"
+            class="css-input arriveInput"
+            required
+          />
           <button type="submit" class="valider">Réserver</button>
         </div>
       </form>

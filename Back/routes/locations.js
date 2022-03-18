@@ -170,7 +170,6 @@ router.get("/search", async (req, res) => {
     const {
       data: { data: locations },
     } = await axios(options);
-    console.log(locations);
 
     // filtrer
     let locationsFiltered = [];
