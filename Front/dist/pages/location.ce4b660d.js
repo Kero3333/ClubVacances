@@ -544,7 +544,6 @@ bathroom.textContent = location.bathroom;
 equipment.textContent = location.equipment;
 category.textContent = location.category;
 type.textContent = location.type;
-console.log(id);
 const form = document.querySelector("form");
 form.addEventListener("submit", async (e)=>{
     e.preventDefault();
