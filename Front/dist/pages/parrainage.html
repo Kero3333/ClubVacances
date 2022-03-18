@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,47 +8,56 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
     <title>Parrainage</title>
     <link rel="stylesheet" href="/index.42b84dc8.css">
-    <link rel="stylesheet" href="/pages/reclamation.e2863964.css">
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <a href="/pages/accueil.html"><img src="/logo.b82d6c7c.png" alt="logo"></a>
-            <div class="cont-button">
-                <a href="/pages/recherches.html">
-                    <span class="navRech">Recherche</span></a>
-                <button class="parrainage">Parrainage</button>
-                <a href="/pages/profil.html"><span class="navOption">Options</span> </a>
-            </div>
-        </nav>
+      <nav>
+        <a href="/pages/accueil.html"><img src="/logo.b82d6c7c.png" alt="logo"></a>
+        <div class="cont-button">
+          <button class="navRech">Recherche</button>
+          <button class="parrainage">Parrainage</button>
+          <button class="navOption"><a href="/pages/profil.html">Profil</a></button>
+        </div>
+      </nav>
     </header>
     <main>
-        <div class="indeximge"></div>
+      <div class="indeximge"></div>
 
-        <div class="formulaireInformation">
-            <h2 class="info">Mes réclamations</h2>
-
-            <div class="mailPerso">
-                <span>Email personnel</span>
-                <div class="mailPersoInput">
-                    <input type="text" name="mailPerso" id="mailPersoReclamInput" class="css-input">
-                </div>
+      <div class="formParr">
+        <h2 class="parrh2">Mon parrainage</h2>
+        <h4 class="txtH4">
+          Remplir ci-dessous pour parrainer un futur membre.
+        </h4>
+        <form>
+          <div class="mailParr">
+            <h3 class="parrTitle">Adresse mail du coopté</h3>
+            <div>
+              <input type="text" name="mailPerso" id="mailPersoReclamInput" class="inputSuj" required="">
             </div>
+          </div>
 
-            <div class="reclam">
-                <span>Message</span>
-                <div class="MessageReclam">
-                    <textarea name="messageReclam" id="messageReclam" class="css-input"></textarea>
-                </div>
+          <div>
+            <h3 class="parrTitle">Lettre de recommandation</h3>
+            <div>
+              <textarea name="messageReclam" id="messageReclam" class="areaFull" required=""></textarea>
             </div>
+          </div>
 
-            <button type="submit" class="valider">Valider</button>
-        </div>
+          <button type="submit" class="valider">Valider</button>
+        </form>
+      </div>
     </main>
     <footer>
-        <p>©Nous</p>
+      <h3>©Team EPKM</h3>
+      <div class="orga"><a href="/pages/organigramme.html">L'équipe</a></div>
+      <div class="team">
+        <a href="https://github.com/erwanbrev">Erwan</a>
+        <a href="https://github.com/PierreL35120">Pierre</a>
+        <a href="https://github.com/Kero3333">Kevin</a>
+        <a href="https://github.com/Mathieu-URA">Mathieu</a>
+      </div>
     </footer>
-<script src="/parrainage.bf5bde67.js"></script></body>
-
+    <script src="/pages/parrainage.d24e3b29.js" defer=""></script>
+  </body>
 </html>

@@ -1,64 +1,77 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="shortcut icon" href="../img/fav.svg" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto:wght@100;400&display=swap"
-        rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="../img/fav.svg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
     <title>Réservations</title>
-    <link rel="stylesheet" href="../design/styles.css">
-    <link rel="stylesheet" href="../design/reservation.css">
-    <link rel="stylesheet" href="../design/menuprofil.css">
+    <link rel="stylesheet" href="../design/styles.css" />
+    <link rel="stylesheet" href="../design/reservation.css" />
+    <link rel="stylesheet" href="../design/menuprofil.css" />
     .
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <a href="./accueil.html"><img src="../img/logo.png" alt="logo"></a>
-            <div class="cont-button">
-                <a href="./recherches.html">
-                    <span class="navRech">Recherche</span></a>
-                <button class="parrainage">Parrainage</button>
-                <a href="./profil.html"><span class="navOption">Options</span> </a>
-            </div>
-        </nav>
+      <nav>
+        <a href="./accueil.html"><img src="../img/logo.png" alt="logo" /></a>
+        <div class="cont-button">
+          <a href="./recherches.html">
+            <span class="navRech">Recherche</span></a
+          >
+          <button class="parrainage">Parrainage</button>
+          <a href="./profil.html"><span class="navOption">Options</span> </a>
+        </div>
+      </nav>
     </header>
     <main>
-        <div class="indeximge"></div>
+      <div class="indeximge"></div>
 
-        <div class="menuprofil">
-            <h2>Demandes</h2>
-            <a href="./profil.html">
-                <p class="informationsPerso">Mes informations</p>
-            </a>
-            <p class="reservationsPerso">Mes réservations</p>
-            <a href="./reclamation.html">
-                <p class="reclamationsPerso">Mes réclamations</p>
-            </a>
+      <div class="menuprofil">
+        <h2>Demandes</h2>
+        <a href="./profil.html">
+          <p class="informationsPerso">Mes informations</p>
+        </a>
+        <p class="reservationsPerso">Mes réservations</p>
+        <a href="./reclamation.html">
+          <p class="reclamationsPerso">Mes réclamations</p>
+        </a>
+      </div>
+
+      <div class="formulaireReservation">
+        <h2>Mes réservation</h2>
+
+        <div class="reservation">
+          <span>Numéro de suivi</span>
+          <div class="reserveInput">
+            <input
+              type="text"
+              name="reservation"
+              id="reserveInput"
+              class="css-input"
+            />
+          </div>
         </div>
 
-        <div class="formulaireReservation">
-            <h2>Mes réservation</h2>
-
-            <div class="reservation">
-                <span>Numéro de suivi</span>
-                <div class="reserveInput">
-                    <input type="text" name="reservation" id="reserveInput" class="css-input">
-                </div>
-            </div>
-
-            <button type="submit" class="valider">Valider</button>
-        </div>
+        <button type="submit" class="valider">Valider</button>
+      </div>
     </main>
     <footer>
-        <p>©Nous</p>
+      <h3>©Team EPKM</h3>
+      <div class="orga"><a href="./organigramme.html">L'équipe</a></div>
+      <div class="team">
+        <a href="https://github.com/erwanbrev">Erwan</a>
+        <a href="https://github.com/PierreL35120">Pierre</a>
+        <a href="https://github.com/Kero3333">Kevin</a>
+        <a href="https://github.com/Mathieu-URA">Mathieu</a>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

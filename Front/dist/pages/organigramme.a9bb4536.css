@@ -4,7 +4,7 @@
     --yellow: #D2B358;
 }
 
-h2{
+h2 {
     margin-top: 10px;
     font-family: 'Cinzel', serif;
     font-size: 30px;
@@ -12,14 +12,14 @@ h2{
     text-align: center;
 }
 
-.indeximge{
+.indeximge {
     height: 17vh;
     width: 100vw;
     background-color: var(--black);
     background-size: cover;
 }
 
-.container{
+.container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 10px;
@@ -33,76 +33,85 @@ h2{
     border-radius: 10px;
 }
 
-.container span{
+.container span {
     font-family: 'Cinzel', serif;
     font-size: 15px;
     color: var(--yellow);
     text-align: center;
 }
 
-.container img{
+.container img {
     height: auto;
     width: 100%;
 }
 
-.directeur{
+.directeur {
     grid-row: 1;
     grid-column: 3;
 }
 
-.directeurImage{
+.directeurImage {
     grid-row: 2;
     grid-column: 3;
 }
 
-.directeurNom{
+.directeurNom {
     grid-row: 3;
     grid-column: 3;
 }
 
-.associes{
+.associes {
     grid-row: 5;
     grid-column: 3;
 }
 
-.associesun{
+.associesun {
     grid-row: 6;
     grid-column: 2;
 }
 
-.assoun{
+.assoun {
     grid-row: 7;
     grid-column: 2;
 }
 
-.associesdeux{
+.associesdeux {
     grid-row: 9;
     grid-column: 2;
 }
 
-.assodeux{
+.assodeux {
     grid-row: 10;
     grid-column: 2;
 }
 
-.associestrois{
+.associestrois {
     grid-row: 6;
     grid-column: 4;
 }
 
-.assotrois{
+.assotrois {
     grid-row: 7;
     grid-column: 4;
 }
 
 
-.associesquatres{
+.associesquatres {
     grid-row: 9;
     grid-column: 4;
 }
 
-.assoquatres{
+.assoquatres {
     grid-row: 10;
     grid-column: 4;
+}
+
+@media screen and (max-width: 720px) {
+    .container {
+        display: flex;
+        width: 90vw;
+        margin-bottom: -70vh;
+        flex-direction: column;
+    }
 }
 /*# sourceMappingURL=organigramme.a9bb4536.css.map */

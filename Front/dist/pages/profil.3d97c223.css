@@ -4,11 +4,11 @@
     --yellow: #D2B358;
 }
 
-.informationsPerso{
+.informationsPerso {
     font-weight: bold;
 }
 
-.formulaireInformation{
+.formulaireInformation {
     width: 50vw;
     height: auto;
     background-color: var(--grey);
@@ -26,7 +26,7 @@
     margin-bottom: -70vh;
 }
 
-.css-input{
+.css-input {
     padding: 5px;
     font-size: 18px;
     border-width: 1px;
@@ -35,60 +35,63 @@
     color: #000000;
     border-style: solid;
     border-radius: 5px;
-    box-shadow: 0px 0px 0px rgba(66,66,66,.75);
+    box-shadow: 0px 0px 0px rgba(66, 66, 66, .75);
     height: 25px;
 }
 
-.info{
+.info {
     grid-column: 2/9;
     grid-row: 1;
 }
 
-.nom{
+.nom {
     grid-column: 2/4;
     grid-row: 2;
 }
 
-.prenom{
+.prenom {
     grid-column: 8/9;
     grid-row: 2;
 }
 
-.mailParrain{
+.mailParrain {
     grid-column: 2/9;
     grid-row: 3;
 }
 
-.mailPerso{
+.mailPerso {
     grid-column: 2/9;
     grid-row: 4;
 }
 
-.titreMDP{
+.titreMDP {
     grid-column: 2/9;
     grid-row: 5;
 }
 
-.AncienMDP{
+.AncienMDP {
     grid-column: 2/9;
     grid-row: 6;
 }
 
-.NouveauMDP{
+.NouveauMDP {
     grid-column: 2/9;
     grid-row: 7;
 }
 
-.valider{
+.valider {
     grid-column: 7;
     grid-row: 8;
 }
 
-#mailParrainInput, #mailPersoInput, #AncienMDPInput, #NouveauMDPInput{
+#mailParrainInput,
+#mailPersoInput,
+#AncienMDPInput,
+#NouveauMDPInput {
     width: 100%;
 }
 
-.valider{
+.valider {
     border: none;
     font-size: 18px;
     color: var(--yellow);
@@ -103,8 +106,28 @@
     margin-left: 10px;
 }
 
-.valider:hover{
+.valider:hover {
     background-color: var(--yellow);
-    color:var(--black)
+    color: var(--black)
+}
+
+
+@media screen and (max-width: 720px) {
+    .formulaireInformation {
+        margin-top: 30vh;
+        display: flex;
+        width: 98vw;
+        margin-left: 1vw;
+        flex-direction: column;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        padding-bottom: 1vh;
+    }
+
+    .valider {
+        width: 20vw;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
 }
 /*# sourceMappingURL=profil.3d97c223.css.map */

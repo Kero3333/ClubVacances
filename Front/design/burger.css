@@ -1,0 +1,77 @@
+.btn-burger div {
+    height: 3px;
+    width: 30px;
+    background-color: var(--pinkmo);
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+.btn-burger {
+    display: none;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+
+    /* button burger */
+    .mobile-nav {
+        display: inline-block;
+        background: linear-gradient(#f5578e, #56ddd9);
+        border-radius: 5px;
+        width: 90%;
+        top: 10%;
+        right: 0;
+        /* position and overflow are important to hide the menu burger */
+        position: fixed;
+        overflow: hidden;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .mobile-ul {
+
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 46vh;
+    }
+
+    .mobile-ul a {
+        color: var(--white);
+    }
+
+    .btn-burger {
+        display: block;
+        margin-right: 10px;
+    }
+
+    .mobile-nav-active {
+        transform: translateX(-5%);
+    }
+
+    /* La classe toggle est créée directement en JS */
+    .toggle .line-1 {
+        transform: rotate(45deg) translateX(11px);
+    }
+
+    .toggle .line-2 {
+        opacity: 0;
+    }
+
+    .toggle .line-3 {
+        transform: rotate(-45deg) translateX(11px);
+    }
+
+    .mobile-img {
+        display: block;
+    }
+
+    .desktop-img {
+        display: none;
+    }
+}

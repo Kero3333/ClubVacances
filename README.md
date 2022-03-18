@@ -1,16 +1,18 @@
 # Vacances chez Gustave.
 
+# Le site est trouvable [ici](https://erwanbrev.github.io/ClubVacances/)
+
 ## Site de location d’appartement ou maison à la mer et à la montagne créee par :
 
 ### Front-end
 
-- [Pierre LEMONNIER](https://github.com/jordan0602/jordan0602)
-- [Erwan BRÉVAULT](https://github.com/Antoine-M-9/Antoine-M-9)
+- [Pierre LEMONNIER](https://github.com/PierreL35120)
+- [Erwan BRÉVAULT](https://github.com/erwanbrev)
 
 ### Back-end
 
-- [Mathieu PÉRAN](https://github.com/Bubamara0/Bubamara0)
-- [Kévin ROBIC](https://github.com/corsairecypri/corsairecypri)
+- [Mathieu PÉRAN](https://github.com/Mathieu-URA)
+- [Kévin ROBIC](https://github.com/Kero3333)
 
 ### Tarif variable en fonction des saisons. (haute, moyenne et basse saison).
 

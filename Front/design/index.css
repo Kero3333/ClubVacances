@@ -19,10 +19,10 @@
     border-radius: 5px;
     transform: translateX(-50%);
     margin-left: 50%;
-    margin-top: 2%;
+    margin-top: 3%;
     padding-top: 30px;
     padding-left: 30px;
-    margin-bottom: 2%;
+    margin-bottom: 2.2%;
 }
 
 .recherche span {
@@ -92,19 +92,32 @@
     margin-left: 55px;
 }
 
+.vactexte {
+    margin-left: 34%;
+    color: var(--yellow);
+    font-size: 200%;
+    font-family: 'Cinzel', serif;
+}
+
 .rechercher {
-    border: none;
-    font-size: 18px;
+    margin-top: 1%;
     color: var(--yellow);
     border: solid 1px var(--yellow);
     border-radius: 5px;
-    width: 130px;
-    height: 22px;
+    width: 20%;
+    height: 300%;
     text-align: center;
     background-color: var(--grey);
     font-family: 'Cinzel', serif;
-    font-size: 16px;
-    margin-left: 10px;
+    font-size: 200%;
+    transform: translateX(-50%);
+    margin-left: 50%;
+}
+
+.recherche input::placeholder {
+    visibility: hidden;
+    font-family: 'Cinzel', serif;
+    color: var(--yellow);
 }
 
 .rechercher:hover {
@@ -184,4 +197,71 @@ h2 {
 .appart span {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+}
+
+
+@media screen and (max-width: 720px) {
+    body{
+        width: 100%;
+    }
+
+    .indeximg{
+        background-size:contain;
+        height: 30vh;
+    }
+
+    h2{
+        width: 90vw;
+        margin-left: 5vw;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .appart, .france{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .france img{
+        width: 70vw;
+        margin-top: 9%;
+        height: auto;
+        margin-left: 15%;
+    }
+
+    .france span{
+        width: 100vw;
+    }
+    
+    .france{
+        margin-left: 0;
+    }
+
+    .appart{
+        width: 100vw;
+        margin-left: 0;
+    }
+    
+    .appart img{
+        width: 90vw;
+        margin-left: 5vw;
+        height: auto;
+    }
+    
+    .appart span{
+        background-color: var(--grey);
+        width: 90vw;
+        margin-left: 5vw;
+        margin-bottom: 2%;
+    }
+
+    .rechercher{
+        font-size: 100%;
+        width: 40%;
+    }
+
+    .vactexte{
+        width: 90vw;
+        margin-left: 5vw;
+    }
 }

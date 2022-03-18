@@ -80,4 +80,24 @@
     background-color: var(--yellow);
     color: var(--black)
 }
+
+
+@media screen and (max-width: 720px) {
+    .formulaireInformation{
+        margin-top: 30vh;
+        display: flex;
+        width: 98vw;
+        margin-left: 1vw;
+        flex-direction: column;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        padding-bottom: 1vh;
+    }
+
+    .valider{
+        width: 20vw;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+}
 /*# sourceMappingURL=reclamation.e2863964.css.map */

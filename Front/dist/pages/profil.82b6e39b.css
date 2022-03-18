@@ -33,4 +33,17 @@ h2{
     color: var(--yellow);
     font-size: 30px;
 }
+
+@media screen and (max-width: 720px) {
+    .menuprofil{
+        width: 98vw;
+        margin-left: 1vw;
+        padding-left: 2vw;
+        position:absolute;
+    }
+
+    .menuprofil p{
+        margin-top: 1vh;
+    }
+}
 /*# sourceMappingURL=profil.82b6e39b.css.map */

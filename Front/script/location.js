@@ -40,8 +40,6 @@ type.textContent = location.type;
 const form = document.querySelector("form");
 
 form.addEventListener("submit", async (e) => {
-  e.preventDefault();
-
   const cook = document.querySelector("#chef").checked;
   const visit = document.querySelector("#visite").checked;
   const start_date = e.target.startDate.value;

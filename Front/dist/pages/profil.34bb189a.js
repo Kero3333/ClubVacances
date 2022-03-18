@@ -527,7 +527,6 @@ const authorized = async ()=>{
 authorized();
 const form = document.querySelector("form");
 form.addEventListener("submit", async (e)=>{
-    e.preventDefault();
     const lastname = e.target.nom.value;
     const firstname = e.target.prenom.value;
     const email = e.target.mailPerso.value;
