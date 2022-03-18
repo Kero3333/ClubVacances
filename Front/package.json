@@ -1,0 +1,27 @@
+{
+  "name": "clubvacances",
+  "version": "1.0.0",
+  "description": "### Front-end * [Pierre LEMONNIER](https://github.com/jordan0602/jordan0602) * [Erwan BRÉVAULT](https://github.com/Antoine-M-9/Antoine-M-9)",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html ./pages/*.html "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erwanbrev/ClubVacances.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erwanbrev/ClubVacances/issues"
+  },
+  "homepage": "https://github.com/erwanbrev/ClubVacances#readme",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "parcel": "^2.3.2"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
+}

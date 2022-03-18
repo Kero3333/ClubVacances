@@ -1,0 +1,108 @@
+:root {
+    --grey: #1A1B20;
+    --black: #000011;
+    --yellow: #D2B358;
+}
+
+h2{
+    margin-top: 10px;
+    font-family: 'Cinzel', serif;
+    font-size: 30px;
+    color: var(--yellow);
+    text-align: center;
+}
+
+.indeximge{
+    height: 17vh;
+    width: 100vw;
+    background-color: var(--black);
+    background-size: cover;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(30px);
+    background-color: var(--grey);
+    height: auto;
+    padding-bottom: 2%;
+    width: 90%;
+    margin-left: 5%;
+    border: var(--yellow) solid 1px;
+    border-radius: 10px;
+}
+
+.container span{
+    font-family: 'Cinzel', serif;
+    font-size: 15px;
+    color: var(--yellow);
+    text-align: center;
+}
+
+.container img{
+    height: auto;
+    width: 100%;
+}
+
+.directeur{
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.directeurImage{
+    grid-row: 2;
+    grid-column: 3;
+}
+
+.directeurNom{
+    grid-row: 3;
+    grid-column: 3;
+}
+
+.associes{
+    grid-row: 5;
+    grid-column: 3;
+}
+
+.associesun{
+    grid-row: 6;
+    grid-column: 2;
+}
+
+.assoun{
+    grid-row: 7;
+    grid-column: 2;
+}
+
+.associesdeux{
+    grid-row: 9;
+    grid-column: 2;
+}
+
+.assodeux{
+    grid-row: 10;
+    grid-column: 2;
+}
+
+.associestrois{
+    grid-row: 6;
+    grid-column: 4;
+}
+
+.assotrois{
+    grid-row: 7;
+    grid-column: 4;
+}
+
+
+.associesquatres{
+    grid-row: 9;
+    grid-column: 4;
+}
+
+.assoquatres{
+    grid-row: 10;
+    grid-column: 4;
+}
+/*# sourceMappingURL=organigramme.a9bb4536.css.map */

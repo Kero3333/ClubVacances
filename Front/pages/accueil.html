@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="../img/fav.svg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Accueil</title>
+    <link rel="stylesheet" href="../design/styles.css" />
+    <link rel="stylesheet" href="../design/index.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="./accueil.html"><img src="../img/logo.png" alt="logo" /></a>
+        <div class="cont-button">
+          <a href="./recherches.html">
+            <span class="navRech">Recherche</span></a
+          >
+          <button class="parrainage">Parrainage</button>
+          <a href="./profil.html"><span class="navOption">Options</span> </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="indeximg"></div>
+      <form>
+        <div class="recherche">
+          <span class="destinationText">Où voulez vous aller ?</span>
+          <span class="departText">Départ</span>
+          <span class="arriveText">Arrivée</span>
+          <span class="adulteText">Nb Adultes</span>
+          <span class="enfantText">Nb Enfants</span>
+          <span class="chambreText">Chambres</span><br />
+          <input type="text" class="css-input destination" name="destination" />
+          <input type="date" class="css-input depart" name="depart" />
+          <input type="date" class="css-input arrive" name="arrive" />
+          <input type="text" class="css-input adulte" name="adulte" />
+          <input type="text" class="css-input enfant" name="enfant" />
+          <input type="text" class="css-input chambre" name="chambre" />
+          <input type="submit" class="rechercher" value="Rechercher" />
+        </div>
+      </form>
+
+      <h2>Voyagez en france</h2>
+      <div class="france">
+        <div class="villes">
+          <div class="villeImg">
+            <img src="../img/villes/Paris.png" alt="" />
+          </div>
+          <a href="recherches.html" id="montagne"><span>Montagne</span></a>
+        </div>
+        <div class="ville">
+          <div class="villeImg">
+            <img src="../img/villes/Bordeaux.png" alt="" />
+          </div>
+          <a href="recherches.html" id="bordDeMer"><span>Bord de mer</span></a>
+        </div>
+        <div class="ville">
+          <div class="villeImg">
+            <img src="../img/villes/Marseille.png" alt="" />
+          </div>
+          <a href="recherches.html" id="campagne"><span>Campagne</span></a>
+        </div>
+        <div class="ville">
+          <div class="villeImg">
+            <img src="../img/villes/Lille.png" alt="" />
+          </div>
+          <a href="recherches.html" id="ville"><span>Ville</span></a>
+        </div>
+      </div>
+
+      <h2 class="appartTitre">Nos coups de coeurs</h2>
+      <div class="appart">
+        <div class="location">
+          <div class="villeImg">
+            <img src="../img/location/1.jpg" alt="location/1" />
+          </div>
+          <a href="./location.html"><span>Voir la description</span></a>
+        </div>
+        <div class="location">
+          <div class="villeImg">
+            <img src="../img/location/2.jpg" alt="location/2" />
+          </div>
+          <a href="./location.html"><span>Voir la description</span></a>
+        </div>
+        <div class="location">
+          <div class="villeImg" id="1">
+            <img src="../img/location/3.jpg" alt="location/"">
+          </div>
+          <a href=" ./location.html"> <span>Voir la description</span></a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>©Nous</p>
+    </footer>
+    <script type="module" src="../script/acceuil.js"></script>
+  </body>
+</html>

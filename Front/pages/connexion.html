@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../img/fav.svg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Connexion</title>
+    <link rel="stylesheet" href="../design/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html">
+          <img src="../img/logo.png" alt="logo" />
+        </a>
+        <div class="cont-button">
+          <button class="connexion" id="co-none">Connexion</button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <form class="form-co">
+        <h1 id="title-co">Connexion</h1>
+        <div class="autre">
+          <label for="mail"
+            >Identifiant<br />
+            <input type="text" name="identifier" id="id" class="inputSize"
+          /></label>
+          <label for="mail"
+            >E-mail personnel <br />
+            <input type="text" name="mail" id="mail" class="inputSize"
+          /></label>
+          <label for="pass"
+            >Mot de passe <br />
+            <input type="password" name="pass" id="pass"
+          /></label>
+        </div>
+        <div>
+          <button type="submit" class="valider">Valider</button>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <h3>©Nous</h3>
+    </footer>
+    <script type="module" src="../script/connexion.js"></script>
+  </body>
+</html>

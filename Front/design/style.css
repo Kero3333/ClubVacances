@@ -1,0 +1,276 @@
+/* !DEFINITION DE BASE */
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --grey: #1A1B20;
+    --black: #000011;
+    --yellow: #D2B358;
+}
+
+/* !PARAMETRAGE GLOBAL */
+nav button,
+#title-co,
+label,
+.valider,
+footer {
+    color: var(--yellow);
+
+}
+
+header,
+nav button,
+.annonce,
+.form-co,
+footer {
+    background-color: var(--grey);
+}
+
+/* ! */
+
+body {
+    background-color: var(--black);
+    color: white;
+}
+
+header {
+    height: 14vh;
+    position: relative;
+    z-index: 3;
+    width: 100vw;
+    box-shadow: 0px 10px 7px -7px var(--yellow);
+}
+
+header,
+footer {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+nav img {
+    margin-top: 5px;
+    margin-left: 60px;
+    width: 90px;
+    height: 90px;
+}
+
+nav button {
+    height: 20px;
+}
+
+.cont-button {
+    width: 250px;
+    display: flex;
+    align-items: center;
+}
+
+.connexion {
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 150px;
+    height: 41px;
+    text-align: center;
+    border: 1px solid var(--yellow);
+}
+
+.connexion:hover,
+.valider:hover {
+    background-color: var(--yellow);
+    color: var(--grey);
+}
+
+/* !STYLE DE LA PAGE D'ACCUEIL */
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    margin-right: 0;
+}
+
+.cont-left {
+    display: grid;
+    width: 1000px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+}
+
+.img-left {
+    display: flex;
+    align-items: flex-end;
+}
+
+.cont-left img {
+    width: 240px;
+    height: auto;
+}
+
+.annonce {
+    border-radius: 10px;
+    padding: 3.3%;
+    border: 1px solid var(--yellow);
+    height: 60%;
+    font-size: 24px;
+    font-family: 'Cormorant', serif;
+    margin-top: 4%;
+}
+
+.cont-right img {
+    width: 420px;
+    height: auto;
+    margin-left: 4.6%;
+}
+
+/* !FIN DE LA PAGE D'ACCUEIL */
+/* !STYLE DE LA PAGE CONNEXION */
+.form-co {
+    margin: 7% auto;
+    width: 700px;
+    height: 470px;
+    border: 1px solid var(--yellow);
+    border-radius: 10px;
+    padding: 4%;
+    padding-top: 3%;
+}
+
+#title-co {
+    display: flex;
+    justify-content: center;
+    margin: 5% auto;
+    font-size: 180%;
+    font-weight: 200;
+}
+
+
+#title-co,
+label {
+    font-family: 'Cinzel', serif;
+}
+
+.inputt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 10%;
+    line-height: 270%;
+}
+
+input {
+    border-radius: 5px;
+    border: none;
+    height: 3vh;
+}
+
+.autre {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-top: 10%;
+    line-height: 170%;
+}
+
+#mail {
+    margin-bottom: 10%;
+}
+
+.inputSize {
+    width: 89.5%;
+}
+
+.valider {
+    border: solid 1px var(--yellow);
+    border-radius: 5px;
+    width: 20%;
+    height: 10%;
+    background-color: var(--grey);
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4% auto;
+}
+
+#co-none {
+    display: none;
+}
+
+
+/* !FIN DE LA PAGE CONNEXION */
+/* !STYLE DE LA PAGE PARRAINAGE */
+.indeximge {
+    height: 24vh;
+    width: 100vw;
+    background-color: var(--black);
+}
+
+.cont-button {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    margin-right: 8%;
+}
+
+.connexion,
+.parrainage {
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 3%;
+    padding-right: 10%;
+    padding-left: 10%;
+    height: 41px;
+    text-align: center;
+    border: 1px solid var(--yellow);
+    color: var(--yellow);
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.navOption {
+    margin-right: 500px;
+    margin-left: 10px;
+}
+
+.connexion:hover,
+.parrainage:hover {
+    background-color: var(--yellow);
+    color: var(--grey);
+}
+
+/* !FIN DE LA PAGE PARRAINAGE */
+/* !FOOTER DE BASE */
+/* footer {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 14vh;
+    width: 100vw;
+    box-shadow: 0px -10px 7px -7px var(--yellow);
+} */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50%;
+    height: 14vh;
+    width: 100vw;
+    background-color: var(--grey);
+    color: var(--yellow);
+    box-shadow: 0px -10px 7px -7px var(--yellow);
+}

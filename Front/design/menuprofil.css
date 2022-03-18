@@ -1,0 +1,35 @@
+:root {
+    --grey: #1A1B20;
+    --black: #000011;
+    --yellow: #D2B358;
+}
+
+.indeximge{
+    height: 24vh;
+    width: 100vw;
+    background-color: var(--black);
+}
+
+.menuprofil{
+    position: fixed;
+    margin-left: 10vh;
+    background-color: var(--grey);
+    font-family: 'Cinzel', serif;
+    color:var(--yellow);
+    border: var(--yellow) 1px solid;
+    width: 25vw;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+}
+
+.menuprofil p{
+    margin-top: 3vh;
+}
+
+h2{
+    font-family: 'Cinzel', serif;
+    color: var(--yellow);
+    font-size: 30px;
+}

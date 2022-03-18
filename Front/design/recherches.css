@@ -1,0 +1,92 @@
+.indeximge {
+  height: 17vh;
+  width: 100vw;
+  background-color: var(--black);
+  background-size: cover;
+}
+
+:root {
+  --grey: #1a1b20;
+  --black: #000011;
+  --yellow: #d2b358;
+}
+
+.recherche {
+  width: 1200px;
+  height: 100px;
+  background-color: var(--grey);
+  border-radius: 5px;
+  transform: translateX(-50%);
+  margin-left: 50%;
+  margin-top: 2%;
+  padding-top: 30px;
+  padding-left: 30px;
+  margin-bottom: 2%;
+}
+
+.recherche span {
+  font-family: "Cinzel", serif;
+  font-size: 13px;
+  color: var(--yellow);
+}
+
+.css-input {
+  padding: 5px;
+  font-size: 18px;
+  border-width: 1px;
+  border-color: #cccccc;
+  background-color: #f6f6f6;
+  color: #000000;
+  border-style: solid;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px rgba(66, 66, 66, 0.75);
+  height: 25px;
+}
+
+.destination,
+.destinationText {
+  width: 169px;
+}
+
+.adulte,
+.enfant,
+.chambre,
+.chambreText {
+  width: 120px;
+}
+
+.depart,
+.arrive {
+  width: 170px;
+}
+
+.depart,
+.adulte {
+  margin-left: 45px;
+}
+
+.arrive,
+.enfant,
+.chambre {
+  margin-left: 5px;
+}
+
+.departText {
+  margin-left: 56px;
+}
+
+.arriveText {
+  margin-left: 130px;
+}
+
+.adulteText {
+  margin-left: 160px;
+}
+
+.enfantText {
+  margin-left: 50px;
+}
+
+.chambreText {
+  margin-left: 55px;
+}

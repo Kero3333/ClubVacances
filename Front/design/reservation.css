@@ -1,0 +1,82 @@
+:root {
+    --grey: #1A1B20;
+    --black: #000011;
+    --yellow: #D2B358;
+}
+
+.reservationsPerso{
+    font-weight: bold;
+}
+
+.formulaireReservation{
+    width: 50vw;
+    height: auto;
+    background-color: var(--grey);
+    display: flex;
+    margin-left: 40vw;
+    border-radius: 15px;
+    border: var(--yellow) 1px solid;
+    font-family: 'Cinzel', serif;
+    color: var(--yellow);
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(30px, 70px);
+    padding-top: 20px;
+    margin-bottom: -70vh;
+}
+
+.css-input{
+    padding: 5px;
+    font-size: 18px;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    background-color: #f6f6f6;
+    color: #000000;
+    border-style: solid;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px rgba(66,66,66,.75);
+    height: 25px;
+}
+
+.formulaireReservation h2{
+    grid-column: 2/9;
+    grid-row: 1;
+}
+
+.reservation{
+    grid-column: 2/9;
+    grid-row: 2;
+    margin-left: 30px;
+}
+
+#reserveInput{
+    width: 100%;
+}
+
+.valider{
+    border: none;
+    font-size: 18px;
+    color: var(--yellow);
+    border: solid 1px var(--yellow);
+    border-radius: 5px;
+    width: 130px;
+    height: 22px;
+    text-align: center;
+    background-color: var(--grey);
+    font-family: 'Cinzel', serif;
+    font-size: 16px;
+    margin-left: 10px;
+    grid-column: 5;
+    grid-row: 3;
+}
+
+.valider:hover{
+    background-color: var(--yellow);
+    color:var(--black)
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+}

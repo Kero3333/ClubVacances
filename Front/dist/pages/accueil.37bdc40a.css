@@ -1,0 +1,188 @@
+:root {
+    --grey: #1A1B20;
+    --black: #000000;
+    --yellow: #D2B358;
+}
+
+.indeximg {
+    height: 80vh;
+    width: 100vw;
+    background-image: url("../indeximag.4dec5bd0.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.recherche {
+    width: 1200px;
+    height: 100px;
+    background-color: var(--grey);
+    border-radius: 5px;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    margin-top: 2%;
+    padding-top: 30px;
+    padding-left: 30px;
+    margin-bottom: 2%;
+}
+
+.recherche span {
+    font-family: 'Cinzel', serif;
+    font-size: 13px;
+    color: var(--yellow)
+}
+
+.css-input {
+    padding: 5px;
+    font-size: 18px;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    background-color: #f6f6f6;
+    color: #000000;
+    border-style: solid;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px rgba(66, 66, 66, .75);
+    height: 25px;
+}
+
+.destination,
+.destinationText {
+    width: 169px;
+}
+
+.adulte,
+.enfant,
+.chambre,
+.chambreText {
+    width: 120px;
+}
+
+.depart,
+.arrive {
+    width: 170px;
+}
+
+.depart,
+.adulte {
+    margin-left: 45px;
+}
+
+.arrive,
+.enfant,
+.chambre {
+    margin-left: 5px;
+}
+
+.departText {
+    margin-left: 56px;
+}
+
+.arriveText {
+    margin-left: 130px;
+}
+
+.adulteText {
+    margin-left: 160px;
+}
+
+.enfantText {
+    margin-left: 50px;
+}
+
+.chambreText {
+    margin-left: 55px;
+}
+
+.rechercher {
+    border: none;
+    font-size: 18px;
+    color: var(--yellow);
+    border: solid 1px var(--yellow);
+    border-radius: 5px;
+    width: 130px;
+    height: 22px;
+    text-align: center;
+    background-color: var(--grey);
+    font-family: 'Cinzel', serif;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.rechercher:hover {
+    background-color: var(--yellow);
+    color: var(--grey);
+}
+
+h2 {
+    font-family: 'Cinzel', serif;
+    color: var(--yellow);
+    font-size: 30px;
+    font-weight: 200;
+    margin-left: 4.6%;
+}
+
+.coeur {
+    width: 90vw;
+    justify-content: space-between;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 10vh;
+}
+
+.coeur img {
+    height: 300px;
+}
+
+.france,
+.appart {
+    display: inline-block;
+    width: 90vw;
+    justify-content: space-between;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 10vh;
+    font-family: 'Cinzel', serif;
+    color: var(--yellow);
+}
+
+.villeImg img,
+.locationImg img {
+    height: 250px;
+}
+
+.france span,
+.appart span {
+    display: flex;
+    justify-content: center;
+}
+
+.appart span {
+    background-color: var(--grey);
+    height: 35px;
+    font-size: 20px;
+    padding-top: 5px;
+    margin-top: -5px;
+}
+
+.appartTitre {
+    margin-top: 5%;
+}
+
+.appart {
+    margin-bottom: -75vh;
+}
+
+.france img {
+    border-radius: 10px;
+}
+
+.appart img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.appart span {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+/*# sourceMappingURL=accueil.37bdc40a.css.map */

@@ -1,0 +1,101 @@
+{
+  "kind": "collectionType",
+  "collectionName": "locations",
+  "info": {
+    "singularName": "location",
+    "pluralName": "locations",
+    "displayName": "Location",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "picture": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "localisation": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "low_season": {
+      "type": "decimal",
+      "required": true
+    },
+    "medium_season": {
+      "type": "decimal",
+      "required": true
+    },
+    "high_season": {
+      "type": "decimal",
+      "required": true
+    },
+    "area": {
+      "type": "integer",
+      "default": 0,
+      "required": true
+    },
+    "bedroom": {
+      "type": "integer",
+      "required": true
+    },
+    "bathroom": {
+      "type": "integer",
+      "required": true
+    },
+    "cook": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Ville",
+        "Montagne",
+        "Campagne",
+        "Bord de mer"
+      ],
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Maison",
+        "Villa",
+        "Manoir",
+        "Chalet",
+        "Atypique",
+        "Appartement"
+      ],
+      "required": true
+    },
+    "equipment": {
+      "type": "text",
+      "required": true
+    },
+    "reservations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::reservation.reservation",
+      "mappedBy": "location"
+    }
+  }
+}

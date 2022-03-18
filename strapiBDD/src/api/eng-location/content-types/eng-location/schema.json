@@ -1,0 +1,94 @@
+{
+  "kind": "collectionType",
+  "collectionName": "eng_locations",
+  "info": {
+    "singularName": "eng-location",
+    "pluralName": "eng-locations",
+    "displayName": "Eng-location",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "picture": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "localisation": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": false
+    },
+    "low_season": {
+      "type": "decimal",
+      "required": true
+    },
+    "medium_season": {
+      "type": "decimal",
+      "required": true
+    },
+    "high_season": {
+      "type": "decimal",
+      "required": true
+    },
+    "area": {
+      "type": "integer",
+      "required": true
+    },
+    "bedroom": {
+      "type": "integer",
+      "required": true
+    },
+    "bathroom": {
+      "type": "integer",
+      "required": true
+    },
+    "cook": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "City",
+        "Mountain",
+        "Countryside",
+        "Seaside"
+      ],
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "House",
+        "Villa",
+        "Manor",
+        "Chalet",
+        "Atypical",
+        "Apartment"
+      ],
+      "required": true
+    },
+    "equipment": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
